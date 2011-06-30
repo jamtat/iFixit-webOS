@@ -1,0 +1,28 @@
+{
+	"id": "com.jamtat.ifixit",
+	"version": "1.0.2",
+	"vendor": "Jamtat",
+	"type": "web",
+	"main": "index.html",
+	"title": "iFixit",
+	"icon": "icons/64.png",
+	"guideicon": "icons/guide64.png",
+	"guideicons": {
+		"64": "icons/guide64.png",
+		"128": "icons/guide128.png",
+		"256": "icons/guide256.png",
+		"512": "icons/guide512.png"
+	},
+	"splashicon": "splash.png",
+	"uiRevision": 2,
+	"universalSearch":{
+		"dbsearch":{
+			"displayName":"iFixit Device Search",
+			"url":"com.jamtat.ifixit",
+			"launchParam":"deviceName",
+			"launchParamDbField":"device",
+			"displayFields":["device"],
+			"dbQuery":{"from":"ifixit.devices:1", "where":[{"prop":"devicelowercase","op":"%","val":""}],"orderBy":"device","limit":20} 
+		}
+	}
+}

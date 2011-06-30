@@ -1,0 +1,11 @@
+{
+  "id": "com.jamtat.ifixit",
+  "package_format_version": 2,
+  "loc_name": "iFixit",
+  "version": "1.0.2",
+  "icon": "icon.png",
+  "miniicon": "icon.png",
+  "vendor": "Jamtat",
+  "app": "com.jamtat.ifixit",
+  "services": ["com.jamtat.ifixit.service"]
+}

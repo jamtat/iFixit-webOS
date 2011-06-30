@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset=UTF-8>
+<title>iFixit</title>
+<script src="/opt/PalmSDK/Current/share/refcode/framework/enyo/1.0/framework/enyo.js" type="text/javascript"></script>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">-->
+<link rel="apple-touch-icon-precomposed" href="icons/128.png"/>
+</head>
+
+<body>
+
+<div id="aboutcontent">
+<div class="about-header"></div>
+<br><br>
+iFixit has been hand-coded with love just for you by <a href="http://twitter.com/ubershinysheep">Jamtat</a>
+<br><br>
+This app uses the <a href="http://ifixit.com/api">iFixit api</a>
+<br><br>
+</div>
+
+<script type="text/javascript">
+	var appInstance = enyo.create({kind:'ifixit.ui.home'}).renderInto(document.body);
+	if (window.PalmSystem && enyo.windowParams){
+		appInstance.setLaunchParams(enyo.windowParams);
+	}
+	appInstance.renderInto(document.body);
+	
+</script>
+</body>
+
+</html>

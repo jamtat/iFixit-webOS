@@ -1,0 +1,14 @@
+{
+	"id": "com.jamtat.ifixit.service",
+	"description": "Icon Maker Service",
+	"activityTimeout" : 30,
+	"services": [{
+		"name": "com.jamtat.ifixit.service",
+		"description": "Supply data url in a json object",
+		"commands": [{
+			"name" : "makeImage",
+			"assistant" : "makeImageAssistant",
+			"public" : true
+		}]
+	}]
+}
